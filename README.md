@@ -7,8 +7,8 @@ A **Modular Energy** é uma Landing Page focada em apresentar os benefícios dos
 ## Tecnologias Utilizadas
 - **HTML5**: Estrutura da página.
 - **CSS3**: Estilização e layout responsivo.
-- **JavaScript**: Funcionalidades interativas (opcional, se aplicado).
-- **Figma**: Prototipagem (se mencionado no design).
+- **JavaScript**: Funcionalidades interativas 
+- **Figma**: Prototipagem 
 
 ## Membros do Grupo
 - Jonathan Henrique Henrique Celso
