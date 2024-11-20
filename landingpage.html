@@ -6,8 +6,10 @@
     <title>LandindPage</title>
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/reset.css">
+    <script src="/scripts/cards.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body class="dark">
     <header>
         <nav>
             <figure class="logo"><img src="/images/ficao-nuclear.png" alt="" >
@@ -18,7 +20,15 @@
                 <li><a href="#Solucao">Inovação</a></li>
                 <li><a href="#Beneficios">Benefícios</a></li>
                 <li><a href="#Contato">Contato</a></li>
+                <li><a href="paises.html">Paises</a></li>
             </ul>
+            <div>
+                <input type="checkbox" name="change-theme" id = "change-theme">
+                <label for="change-theme">
+                    <i class="bi bi-sun"></i>
+                    <i class="bi bi-moon"></i>
+                </label>
+            </div>
         </nav>
     </header>
     <main>
@@ -28,15 +38,15 @@
                 <hr>
                 <p class="Hero-subtitulo">Pequenos reatores nucleares (SRM) são uma fonte de energia limpa, segura e eficiente. Com baixíssimas emissões de carbono, eles ajudam a reduzir o impacto ambiental enquanto fornecem energia confiável.</p>
                 <div>
-                    <a href="" class="btn">Saiba mais</a>
+                    <a href="https://www.iaea.org/newscenter/news/what-are-small-modular-reactors-smrs" class="btn">Saiba mais</a>
                 </div>       
             </div>
             <div class="Hero-login">
-                <form class="login">
+                <form class="login" id ="Login" >
                     <h2>Login</h2>
-                    <input type="text" id="nome" placeholder="Nome">
-                    <input type="email" id="email" placeholder="E-Mail">
-                    <button class="btn">Login</button>
+                    <input type="text" id="email0" placeholder="Usuario">
+                    <input type="password" id="senha" placeholder="Senha">
+                    <button class="btn" type="submit">Login</button>
                 </form>        
             </div>
         </section>
@@ -102,15 +112,14 @@
                     </div>
                 </div>
         </section>
-        <section class="Section-Contato" id="Contato">
-                <form class="contato">
+        <section class="Section-Contato" >
+                <form class="contato" id="contato">
                     <h3>Contato</h3>
-                    <input type="text"id="" placeholder="Nome">
-                    <input type="email" placeholder="E-Mail" >
-                    <textarea id="" placeholder="Mensagem"></textarea>
-                    <button class="btn">Enviar Mensagem</button>
+                    <input type="text" id="nome" placeholder="Nome">
+                    <input type="email" id="email1" placeholder="E-Mail" >
+                    <textarea id="mensagem" placeholder="Mensagem"></textarea>
+                    <button class="btn"type="submit" >Enviar Mensagem</button>
                 </form>
-
         </section>
     </main>
     <footer>

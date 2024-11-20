@@ -1,21 +1,43 @@
-body{
-    background-color: rgb(255, 255, 255) ;
-    color: black    ;
-}
-html{
+body,html{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 1em;
+    background-color: rgb(255, 255, 255) ;
+    color: black  ;
+    transition: 0.3s;
+}
+.dark,.dark-theme{
+    background-color: #263238;
+    color: #F8F8F8;
+}
+.bi{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.bi-moon{
+    display: none;
+}
+.dark .bi-sun{
+    display: none;
+}
+.dark .bi-moon{
+    display: block;
+
+}
+input[type="checkbox"]{
+    display: none;
 }
 a{
     text-decoration: none;
 }
 nav{
-    background-color: black;
+    color: white;
+    background-color: #191919;
     width:100%;
     height: 10vh;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content:space-around;
     align-items: center;
 }
@@ -43,6 +65,8 @@ nav{
 main{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .Hero{
     display: flex;
@@ -75,13 +99,11 @@ main{
     align-items: center;
     justify-content: center ;
 }
-input,textarea{
+form > input,textarea{
     border: none;
     padding: 0.5rem 1rem ;
     width: 70%;
     border-radius: 10px;
-    background-color: #fff; /* Fundo opaco */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .Hero-text{
     height:90vh;
@@ -115,32 +137,31 @@ h1{
 .btn{
     border: none;
     font-size: 0.5rem;
-    background-color: #025411; /* Cor de fundo azul */
-    color: #ffffff; /* Cor do texto branca */
-    padding: 12px 24px; /* Espaçamento interno (padding) */
-    border-radius: 5px; /* Arredonda os cantos */
-    font-weight: bold; /* Texto em negrito */
-    text-transform: uppercase; /* Deixa o texto em letras maiúsculas */
-    cursor: pointer; /* Mostra a mãozinha ao passar o mouse */
+    background-color: #025411; 
+    color: #ffffff; 
+    padding: 12px 24px;
+    border-radius: 5px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    cursor: pointer; 
 }
 .texto_imagem{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 .Problema{
     width: 100%;
-    max-width: 1400px; /* Limita o tamanho máximo da seção */
+    max-width: 87rem; 
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem 6rem;
     gap: 2.5rem; 
-    background-color: white;
 }
 .Solucao, .Benefícios{
     width: 100%;
-    height: 100vh;
-    max-width: 1400px;
+    max-width: 87rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,7 +169,6 @@ h1{
     flex-wrap: wrap;
     padding: 1rem 6rem;
     gap: 2.5rem; 
-    background-color: white;
 }
 .texto {
     display: flex;
@@ -161,14 +181,12 @@ h1{
     font-size: 2rem;
     max-width: 40rem;
     font-weight: 500;
-    color: #202636;
-    line-height: 68px;
+    line-height: 4.5rem;
     margin: 0;
 }
 .texto p {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
-    color: #202636;
     line-height: 1.5rem;
     max-width: 34em;
 }
@@ -205,13 +223,16 @@ h1{
     width: 100%;
     height: 70vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2.5rem;
 }
 .contato{
     background-color: #F8F8F8;
     width: 70%;
     height: 70%;
+    border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
