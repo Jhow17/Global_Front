@@ -11,7 +11,6 @@ const chagethemebtn = document.querySelector("#change-theme")
 contato.addEventListener("submit", (e) => {
     // Impede o envio do formulário (com F5 ou botão de submit)
     e.preventDefault();
-    // Coleta os valores dos campos do formulário e remove espaços extras
 
     // Verifica se algum campo está vazio
     if (nome.value === "" || email.value === "" || mensagem.value === "") {

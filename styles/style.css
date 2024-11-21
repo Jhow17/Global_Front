@@ -242,3 +242,27 @@ h1{
 footer{
     text-align: center;
 }
+.card {
+    width: 15rem;
+    height: 15rem;
+    background-color:#263238;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap:1rem;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
